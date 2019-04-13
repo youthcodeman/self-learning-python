@@ -92,7 +92,15 @@
 # a = [x for x in range(100000000)]
 # print(a)
 
-a = (x for x in range(1000))
-print(a)
-for i in a:
-    print(i)
+# a = (x for x in range(1000))
+# print(a)
+# for i in a:
+#     print(i)
+
+# list1 = [1,2,3,4,5]
+# a = iter(list1)
+# for i in list1:
+#     print(i)
+
+for i in range(10000):
+    print("i love you")
