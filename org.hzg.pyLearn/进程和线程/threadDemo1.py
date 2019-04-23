@@ -18,3 +18,13 @@ t2 = threading.Thread(target = operation2,args=("操作2",5),name="operation1Thr
 if __name__ == "__main__":
    t1.start()
    t2.start()
+
+   t1.join()   # 对主线程进行阻塞，等所有子线程运行结束在运行主线程
+   t2.join()
+
+   #守护主线程，主线程运行完成之后杀死所有子线程
+   t1.setDaemon(True)
+   t2.setDaemon(True)
+
+   print(t1.ident)
+   print(t2.ident)
